@@ -4,13 +4,15 @@
 var horn = document.getElementById("horn-sound");
 var volumeImage = document.getElementById("volume-image");
 
-horn.volume = (setVolumeByText()/100.00).toFixed(2);
-changeIcon();
+var volumeText = document.getElementById("volume_text");
+volumeText.addEventListener("onChange", setVolume(volumeText.value));
+var volumeSlider = document.getElementById("volume_slider");
+volumeSlider.addEventListener("onChange", setVolume(volumeSlider.value));
 
 //sets the volume based on the text field
-function setVolumeByText(){
-  let volumeInput = document.getElementById("volume_text");
-  return parseFloat(volumeInput);
+function setVolume(volume){
+  horn.volume = (setVolumeByText()/100.00).toFixed(2);
+  changeIcon();
 }
 
 //sets the icon based on the volume
