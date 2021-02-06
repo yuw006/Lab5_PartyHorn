@@ -1,5 +1,5 @@
 // main.js
-var airHorn = document.getElementById("radio-air-horn");
+/*var airHorn = document.getElementById("radio-air-horn");
 var carHorn = document.getElementById("radio-car-horn");
 var partyHorn = document.getElementById("radio-party-horn");
 var soundImage = document.getElementById("soundImage");
@@ -16,5 +16,6 @@ function changeToCarHorn(){
 }
 function changeToPartyHorn(){
   soundImage.src = "./assets/media/images/party-horn.svg"; 
-}
+}*/
+document.getElementById("radio-car-horn").addEventListener("click",document.getElementById('soundImage').src='./assets/media/images/car-horn.svg');
 // TODO
