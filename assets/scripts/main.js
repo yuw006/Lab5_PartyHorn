@@ -7,12 +7,12 @@ var volumeImage = document.getElementById("volume-image");
 var volumeText = document.getElementById("volume-number");
 var volumeSlider = document.getElementById("volume-slider");
 
-volumeText.addEventListener('input', setVolume(volumeText.value), false);
-volumeSlider.addEventListener('input', setVolume(volumeSlider.value), false);
+volumeText.addEventListener('input', setVolume, false);
+volumeSlider.addEventListener('input', setVolume, false);
 
 //sets the volume based on the text field
-function setVolume(v){
-  let v2=parseInt(v);
+function setVolume(e){
+  let v2=parseInt(e.target.value);
   horn.volume = (v2/100.00).toFixed(2);
   volumeSlider.value = v2;
   volumeText.value = v2;
