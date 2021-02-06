@@ -18,4 +18,5 @@ function changeToPartyHorn(){
   soundImage.src = "./assets/media/images/party-horn.svg"; 
 }*/
 document.getElementById('radio-car-horn').addEventListener("click", function() {document.getElementById('sound-image').src='./assets/media/images/car.svg'});
+document.getElementById('radio-air-horn').addEventListener("click", function() {document.getElementById('sound-image').src='./assets/media/images/air-horn.svg'});
 // TODO
