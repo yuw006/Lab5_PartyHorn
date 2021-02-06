@@ -12,9 +12,10 @@ volumeSlider.addEventListener('input', setVolume(volumeSlider.value), false);
 
 //sets the volume based on the text field
 function setVolume(v){
-  horn.volume = (v/100.00).toFixed(2);
-  volumeSLider.value = v;
-  volumeTest.value = v;
+  let v2=parseInt(v);
+  horn.volume = (v2/100.00).toFixed(2);
+  volumeSlider.value = v2;
+  volumeText.value = v2;
   event.preventDefault();
   changeIcon(v);
 }
