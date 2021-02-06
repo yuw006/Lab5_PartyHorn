@@ -16,7 +16,6 @@ function setVolume(v){
   horn.volume = (v2/100.00).toFixed(2);
   volumeSlider.value = v2;
   volumeText.value = v2;
-  event.preventDefault();
   changeIcon(v);
 }
 
