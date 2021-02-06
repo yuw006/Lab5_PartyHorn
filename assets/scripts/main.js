@@ -8,7 +8,7 @@ airHorn.addEventListener('click', function (){
                                     soundImage.src = "./assets/media/images/air-horn.svg";}, false);
 carHorn.addEventListener('click', function (){
                                     soundImage.src = "./assets/media/images/car.svg";}, false);
-partyHorn.addEventListener("onclick", function (){
+partyHorn.addEventListener('click', function (){
                                       soundImage.src = "./assets/media/images/party-horn.svg";}, false);
 
 
