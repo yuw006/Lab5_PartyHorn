@@ -15,6 +15,7 @@ partyHorn.addEventListener('click', function (){
                                       soundImage.src = "./assets/media/images/party-horn.svg";
                                       horn.src="./assets/media/audio/party-horn.mp3";}, false);
 
+document.getElementById('honk-btn').addEventListener( 'click', function() { horn.play(); event.preventDefault();}, false);
 
 
 // TODO
