@@ -11,7 +11,10 @@ volumeSlider.addEventListener('change', setVolume(volumeSlider.value), false);
 
 //sets the volume based on the text field
 function setVolume(v){
-  horn.v = (setVolumeByText()/100.00).toFixed(2);
+  horn.volume = (setVolumeByText()/100.00).toFixed(2);
+  volumeSLider.value = v;
+  volumeTest.value = v;
+  event.preventDefault();
   changeIcon(v);
 }
 
