@@ -4,10 +4,13 @@
 var horn = document.getElementById("horn-sound");
 var volumeImage = document.getElementById("volume-image");
 
+horn.volume = (setVolumeByText()/100.00).toFixed(2);
+changeIcon();
+
 //sets the volume based on the text field
 function setVolumeByText(){
   let volumeInput = document.getElementById("volume_text");
-  return parseInt(volumeInput);
+  return parseFloat(volumeInput);
 }
 
 //sets the icon based on the volume
