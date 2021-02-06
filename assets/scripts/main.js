@@ -4,9 +4,10 @@
 var horn = document.getElementById("horn-sound");
 var volumeImage = document.getElementById("volume-image");
 
-var volumeText = document.getElementById("volume_text");
+var volumeText = document.getElementById("volume-number");
+var volumeSlider = document.getElementById("volume-slider");
+
 volumeText.addEventListener('change', setVolume(volumeText.value), false);
-var volumeSlider = document.getElementById("volume_slider");
 volumeSlider.addEventListener('change', setVolume(volumeSlider.value), false);
 
 //sets the volume based on the text field
