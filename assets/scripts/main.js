@@ -29,6 +29,12 @@ function setVolume(e){
   horn.volume = (v2/100.00).toFixed(2);
   volumeSlider.value = v2;
   volumeText.value = v2;
+  if( v2 == 0 ){
+    document.getElementById('honk-btn').disabled = true;
+  }
+  else{
+    document.getElementById('honk-btn').disabled = false;
+  }
   changeIcon(v2);
 }
 
