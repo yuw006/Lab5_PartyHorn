@@ -1,11 +1,10 @@
-name: funny comment
+name: issue comment
 on:
-  pull_request:
   issues:
     types: [opened]
 jobs:
   comment:
-    if: github.event_name == 'pull_request' || github.event_name == 'issues'
+    if: github.event_name == 'issues'
     runs-on: ubuntu-latest
     steps:
       - name: Add funny comment
@@ -14,5 +13,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
-          comment_type: 'chuck'
+          comment_type: 'gif'
       
